@@ -1,41 +1,52 @@
-2024-06-30 17:31:38,766 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:36:57,103 - __thread 0__ - ERROR - the 0 problem 1 attempt failed£¡
-2024-06-30 17:37:04,660 - __thread 0__ - ERROR - the 0 problem 2 attempt failed£¡
-2024-06-30 17:37:12,705 - __thread 0__ - ERROR - the 0 problem 3 attempt failed£¡
-2024-06-30 17:37:12,706 - __thread 0__ - ERROR - ======message======: 
+2024-07-11 16:34:36,981 - __thread 1__ - ERROR - the 6 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:39,163 - __thread 0__ - ERROR - the 0 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:39,553 - __thread 3__ - ERROR - the 10 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:41,620 - __thread 5__ - ERROR - the 20 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:42,861 - __thread 4__ - ERROR - the 13 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:43,093 - __thread 2__ - ERROR - the 8 problem 1 attempt failedï¿½ï¿½
+2024-07-11 16:34:47,872 - __thread 0__ - ERROR - the 0 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:50,575 - __thread 1__ - ERROR - the 6 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:50,699 - __thread 5__ - ERROR - the 20 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:52,286 - __thread 3__ - ERROR - the 10 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:53,231 - __thread 4__ - ERROR - the 13 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:55,113 - __thread 2__ - ERROR - the 8 problem 2 attempt failedï¿½ï¿½
+2024-07-11 16:34:56,075 - __thread 0__ - ERROR - the 0 problem 3 attempt failedï¿½ï¿½
+2024-07-11 16:34:56,075 - __thread 0__ - ERROR - ======message======:
 
-2024-06-30 17:37:12,706 - __thread 0__ - ERROR - 'NoneType' object is not subscriptable
+2024-07-11 16:34:56,075 - __thread 0__ - ERROR - [Errno 13] Permission denied: './tmp\\data.xlsx'
 
-2024-06-30 17:37:12,709 - __thread 0__ - ERROR - Traceback (most recent call last):
-  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v2.py", line 304, in basic_run
-    result = result_process(response_dic)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v2.py", line 245, in result_process
-    resp_text = response_dic["content"]
-                ~~~~~~~~~~~~^^^^^^^^^^^
-TypeError: 'NoneType' object is not subscriptable
+2024-07-11 16:34:56,076 - __thread 0__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v3.py", line 381, in basic_run
+    write_excel(excel_dic, result_list, row_num)
+  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v3.py", line 331, in write_excel
+    excel_dic["workbook"].save(excel_dic["excel_path"])
+  File "C:\Users\Admin\PycharmProjects\pythonProject\venv\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\Admin\PycharmProjects\pythonProject\venv\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1264.0_x64__qbz5n2kfra8p0\Lib\zipfile\__init__.py", line 1331, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './tmp\\data.xlsx'
 
 
-2024-06-30 17:39:21,881 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:41:15,168 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:41:25,603 - __thread 0__ - INFO - the 1 problem solved success£¡
-2024-06-30 17:41:45,945 - __main__ - INFO - ¿ªÊ¼¼ÆËã
-2024-06-30 17:41:52,074 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:41:59,760 - __thread 0__ - INFO - the 1 problem solved success£¡
-2024-06-30 17:42:17,756 - __main__ - INFO - ¿ªÊ¼¼ÆËã
-2024-06-30 17:42:22,733 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:42:31,881 - __thread 0__ - INFO - the 1 problem solved success£¡
-2024-06-30 17:42:31,890 - __main__ - INFO - ¼ÆËãÍê³É
-2024-06-30 17:45:21,919 - __main__ - INFO - ¿ªÊ¼¼ÆËã
-2024-06-30 17:45:25,838 - __thread 0__ - INFO - the 0 problem solved success£¡
-2024-06-30 17:45:27,651 - __thread 1__ - INFO - the 6 problem solved success£¡
-2024-06-30 17:45:31,813 - __thread 2__ - INFO - the 8 problem solved success£¡
-2024-06-30 17:45:32,461 - __thread 1__ - INFO - the 7 problem solved success£¡
-2024-06-30 17:45:33,005 - __thread 0__ - INFO - the 1 problem solved success£¡
-2024-06-30 17:45:37,077 - __thread 0__ - INFO - the 2 problem solved success£¡
-2024-06-30 17:45:39,336 - __thread 2__ - INFO - the 9 problem solved success£¡
-2024-06-30 17:45:42,311 - __thread 0__ - INFO - the 3 problem solved success£¡
-2024-06-30 17:45:46,520 - __thread 0__ - INFO - the 4 problem solved success£¡
-2024-06-30 17:45:50,172 - __thread 0__ - INFO - the 5 problem solved success£¡
-2024-06-30 17:45:50,175 - __main__ - INFO - ¼ÆËãÍê³É
-2024-06-30 17:46:18,061 - __main__ - INFO - ºÏ²¢Íê³É
+2024-07-11 16:34:58,546 - __thread 1__ - ERROR - the 6 problem 3 attempt failedï¿½ï¿½
+2024-07-11 16:34:58,546 - __thread 1__ - ERROR - ======message======:
+
+2024-07-11 16:34:58,546 - __thread 1__ - ERROR - [Errno 13] Permission denied: './tmp\\data.xlsx'
+
+2024-07-11 16:34:58,547 - __thread 1__ - ERROR - Traceback (most recent call last):
+  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v3.py", line 381, in basic_run
+    write_excel(excel_dic, result_list, row_num)
+  File "C:\Users\Admin\PycharmProjects\pythonProject\doubao\multi_thread_frame\multi_thread_test_v3.py", line 331, in write_excel
+    excel_dic["workbook"].save(excel_dic["excel_path"])
+  File "C:\Users\Admin\PycharmProjects\pythonProject\venv\Lib\site-packages\openpyxl\workbook\workbook.py", line 386, in save
+    save_workbook(self, filename)
+  File "C:\Users\Admin\PycharmProjects\pythonProject\venv\Lib\site-packages\openpyxl\writer\excel.py", line 291, in save_workbook
+    archive = ZipFile(filename, 'w', ZIP_DEFLATED, allowZip64=True)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.1264.0_x64__qbz5n2kfra8p0\Lib\zipfile\__init__.py", line 1331, in __init__
+    self.fp = io.open(file, filemode)
+              ^^^^^^^^^^^^^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: './tmp\\data.xlsx'
